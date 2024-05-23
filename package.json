@@ -4,8 +4,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "run:f": "docker run -p 44444:8080 -it ft/rsa-verify",
-    "run:b": "docker run -p 44444:8080 -d ft/rsa-verify"
+    "build:docker": "docker build -t rsa-verify:latest .",
+    "run:docker": "docker run -p 44444:8080 -it rsa-verify"
   },
   "dependencies": {
     "express": "^4.19.2"
