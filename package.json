@@ -1,0 +1,13 @@
+{
+  "name": "rsa-verify",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "run:f": "docker run -p 44444:8080 -it ft/rsa-verify",
+    "run:b": "docker run -p 44444:8080 -d ft/rsa-verify"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
